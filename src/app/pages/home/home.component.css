@@ -1,0 +1,58 @@
+.homeContainer{
+  width: 90%;
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.banner{
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+
+.imgBanner{
+  position: relative;
+  transition: transform 0.8s;
+}
+
+.imgBanner:hover{
+  transform: scale(1.1);
+}
+
+.logoAndDesc{
+  position: absolute;
+  z-index: 800;
+  width: 30%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 90%;
+}
+
+.logoAndDesc > h1{
+  padding: 5% 0% 3% 0%;
+}
+
+.logoAndDesc > img{
+  min-width: 100%;
+  min-height: 100%;
+  transition: transform 0.8s;
+}
+
+.logoAndDesc > p{
+  text-align: justify;
+  padding-bottom: 5%;
+}
+
+.logoAndDesc > button{
+  align-self: flex-start;
+  width: 30%;
+  border-radius: 1rem;
+  font-size: 80%;
+  padding: 2%;
+}
